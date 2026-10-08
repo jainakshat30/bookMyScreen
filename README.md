@@ -46,7 +46,7 @@ This system includes advanced features like **concurrent seat locking**, **real-
 
 - 🔔 **Subscribe on YouTube:** Programming with Amrit
 - 💼 **LinkedIn:** [rajamrit15](https://www.linkedin.com/in/rajamrit15/)
-- 🧑‍💻 **GitHub:** [amritmaurya1504](https://github.com/amritmaurya1504)
+- 🧑‍💻 **GitHub:** [jainakshat30](https://github.com/jainakshat30)
 
 ---
 
