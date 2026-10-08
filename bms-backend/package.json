@@ -10,7 +10,7 @@
     "seed:theaters": "ts-node src/scripts/seed-theaters.ts",
     "seed:movies": "ts-node src/scripts/seed-movies.ts"
   },
-  "author": "ProgrammingWithAmrit",
+  "author": "Akshat Jain",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.7",
