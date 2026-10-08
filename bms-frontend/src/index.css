@@ -28,3 +28,14 @@ body {
 .animate-fadeIn {
   animation: fadeIn 0.2s ease-out;
 }
+
+@keyframes swing {
+  from { transform: rotate(-16deg); }
+  to { transform: rotate(16deg); }
+}
+.animate-swing {
+  animation: swing 2.6s ease-in-out infinite alternate;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-swing { animation: none; }
+}
