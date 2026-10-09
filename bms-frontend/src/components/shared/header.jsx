@@ -1,7 +1,12 @@
 import mainLogo from "../../assets/main-icon.png"
 import { FaSearch } from "react-icons/fa"
+import { useLocation } from "../../context/LocationContext"
+import map from "../../assets/pin.gif"
 
 const Header = () => {
+
+    const {location, loading, error} = useLocation()
+
   return (
     <div className = "w-full text-sm bg-white">
         <div className = "px-4 md:px-8">
@@ -18,8 +23,9 @@ const Header = () => {
                 </div>
                 {/* Right Part */}
                 <div className="flex items-center space-x-4 md:space-x-6">
-                    <div className="text-sm font-medium cursor-pointer whitespace-nowrap">
-                        West Bengal &nbsp; ▼
+                    <div className="flex items-center gap-1 text-sm font-medium cursor-pointer whitespace-nowrap">
+                        {location && <img src={map} alt="" className="h-5 w-5 shrink-0 object-contain" />}
+                        {location && <span>{location} &nbsp; ▼</span>}
                     </div>
                     <button className="bg-[#f84464] cursor-pointer text-white px-4 py-1.5 rounded text-sm font-medium whitespace-nowrap">
                         Sign in
