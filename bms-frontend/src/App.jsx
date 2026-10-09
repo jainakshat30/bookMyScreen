@@ -1,6 +1,7 @@
 import { Route,Routes } from "react-router-dom"
 import Footer from "./components/shared/footer"
 import Header from "./components/shared/header"
+import Home from "./pages/Home"
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
         <Header/>
         <main className = "flex-grow">
           <Routes>
-            <Route path="/" element={<h1>Home</h1>} />
+            <Route path="/" element={<Home />} />
             <Route path="/profile/:id" element={<h1>Profile</h1>} />
             <Route path="/movies" element={<h1>Movies</h1>} />
           </Routes>
