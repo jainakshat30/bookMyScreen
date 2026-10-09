@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
   overflow-x: hidden;
@@ -27,4 +24,15 @@ body {
 }
 .animate-fadeIn {
   animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes swing {
+  from { transform: rotate(-16deg); }
+  to { transform: rotate(16deg); }
+}
+.animate-swing {
+  animation: swing 2.6s ease-in-out infinite alternate;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-swing { animation: none; }
 }

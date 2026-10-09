@@ -1,10 +1,13 @@
 import { Route,Routes } from "react-router-dom"
+import Footer from "./components/shared/footer"
+import Header from "./components/shared/header"
 
 function App() {
 
   return (
     <>
-      <div className = "flex flex-col mih-h-screen">
+      <div className = "flex flex-col min-h-screen">
+        <Header/>
         <main className = "flex-grow">
           <Routes>
             <Route path="/" element={<h1>Home</h1>} />
@@ -12,6 +15,7 @@ function App() {
             <Route path="/movies" element={<h1>Movies</h1>} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </>
   )
